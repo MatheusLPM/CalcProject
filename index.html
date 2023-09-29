@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+        <script src="calc.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="container">
+
+            <div id="display">
+
+                <div id="display-input">
+                    <input id="tela" type="text">
+                </div>
+
+                <div id="display-button" >
+                    <button name="backspace" onclick="backspace()">
+                        <i class="bi bi-backspace"></i>
+                    </button>
+                </div>
+                
+            </div>
+
+            <div id="numbers">
+
+                <div class="operators">
+                    <button style="color: orangered ;" name="clear" onclick="limpar()">C</button>
+                </div>
+
+                <div class="operators">
+                    <button style="font-size: 2.3rem; color: green;" name="parentheses" onclick="parenteses()">( )</button>
+                </div>
+                
+                <div class="operators">
+                    <button style="color: green;" name="porcent" onclick="inserir('%')">%</button>
+                </div>
+                
+                <div class="operators">
+                    <button style="color: green;" name="division" onclick="inserir('/')">&#247;</button>
+                </div>
+                
+                <div class="operators">
+                    <button name="seven" onclick="inserir('7')">7</button>
+                </div>
+                
+                <div class="operators">
+                    <button name="eight" onclick="inserir('8')">8</button>
+                </div>
+                
+                <div class="operators">
+                    <button name="nine" onclick="inserir('9')">9</button>
+                </div>
+                
+                <div class="operators">
+                    <button style="color: green;" name="cross" onclick="inserir('*')">x</button>
+                </div>
+                
+                <div class="operators">
+                    <button name="four" onclick="inserir('4')">4</button>
+                </div>
+                
+                <div class="operators">
+                    <button name="five" onclick="inserir('5')">5</button>
+                </div>
+                
+                <div class="operators">
+                    <button name="six" onclick="inserir('6')">6</button>
+                </div>
+                <div class="operators">
+                    <button style="color: green;" name="subtract" onclick="inserir('-')">-</button>
+                </div>
+                
+                <div class="operators">
+                    <button name="one" onclick="inserir('1')" >1</button>
+                </div>
+                
+                <div class="operators">
+                    <button name="two" onclick="inserir('2')">2</button>
+                </div>
+                
+                <div class="operators">
+                    <button name="tre" onclick="inserir('3')">3</button>
+                </div>
+                
+                <div class="operators">
+                    <button style="color: green;" name="plus" onclick="inserir('+')">+</button>
+                </div>
+                
+                <div class="operators">
+                    <button name="invert" onclick="invert()">+/-</button>
+                </div>
+                
+                <div class="operators">
+                    <button name="zero" onclick="inserir('0')" >0</button>
+                </div>
+                
+                <div class="operators">
+                    <button name="point" onclick="inserir('.')" >.</button>
+                </div>
+                
+                <div class="operators">
+                    <button style="background-color: #477417;" name="point" onclick="calc()">=</button>
+                </div>
+                
+
+            </div>
+
+        </div>
+        
+    
+
+    </body>
+</html>
